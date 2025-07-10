@@ -65,15 +65,31 @@
             <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight mb-4">
                 Comece a vender todos os dias usando Inteligência Artificial
             </h1>
-            <video style="max-width: 80%; height: auto;" controls>
-  <source src="video.mp4" type="video/mp4">
-  Seu navegador não suporta vídeo.
-</video>
+     <style>
+  .videos-container {
+    display: flex;
+    gap: 10px; /* Espaço entre os vídeos */
+    justify-content: center; /* Centraliza horizontalmente */
+    flex-wrap: wrap; /* Faz os vídeos quebrarem linha em telas pequenas */
+  }
 
-<video style="max-width: 100%; height: auto;" controls>
-  <source src="video3.mp4" type="video/mp4">
-  Seu navegador não suporta vídeo.
-</video>
+  .videos-container video {
+    max-width: 48%; /* Cada vídeo ocupa até 48% da largura da área */
+    height: auto;
+  }
+</style>
+
+<div class="videos-container">
+  <video controls>
+    <source src="video.mp4" type="video/mp4">
+    Seu navegador não suporta vídeo.
+  </video>
+
+  <video controls>
+    <source src="video3.mp4" type="video/mp4">
+    Seu navegador não suporta vídeo.
+  </video>
+</div>
             <p class="text-xl sm:text-2xl font-medium mb-8">
                 Aprenda a automatizar suas vendas e aumentar seus ganhos com IA por apenas <span class="font-bold">R$24,90</span>
             </p>
