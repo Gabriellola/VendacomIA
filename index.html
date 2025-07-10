@@ -65,31 +65,44 @@
             <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight mb-4">
                 Comece a vender todos os dias usando Inteligência Artificial
             </h1>
-     <style>
-  .videos-container {
-    display: flex;
-    gap: 10px; /* Espaço entre os vídeos */
-    justify-content: center; /* Centraliza horizontalmente */
-    flex-wrap: wrap; /* Faz os vídeos quebrarem linha em telas pequenas */
-  }
+     <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>Vídeos lado a lado do mesmo tamanho</title>
+  <style>
+    .videos-container {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
 
-  .videos-container video {
-    max-width: l0%; /* Cada vídeo ocupa até l0% da largura da área */
-    height: auto;
-  }
-</style>
+    .videos-container video {
+      height: 200px; /* altura fixa para ambos */
+      width: auto;   /* largura proporcional */
+      border: 1px solid #ccc; /* opcional: borda para destacar */
+      border-radius: 8px; /* opcional: cantos arredondados */
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2); /* opcional: sombra */
+    }
+  </style>
+</head>
+<body>
 
-<div class="videos-container">
-  <video controls>
-    <source src="video.mp4" type="video/mp4">
-    Seu navegador não suporta vídeo.
-  </video>
+  <div class="videos-container">
+    <video controls>
+      <source src="video.mp4" type="video/mp4" />
+      Seu navegador não suporta vídeo.
+    </video>
 
-  <video controls>
-    <source src="video3.mp4" type="video/mp4">
-    Seu navegador não suporta vídeo.
-  </video>
-</div>
+    <video controls>
+      <source src="video3.mp4" type="video/mp4" />
+      Seu navegador não suporta vídeo.
+    </video>
+  </div>
+
+</body>
+</html>
             <p class="text-xl sm:text-2xl font-medium mb-8">
                 Aprenda a automatizar suas vendas e aumentar seus ganhos com IA por apenas <span class="font-bold">R$24,90</span>
             </p>
